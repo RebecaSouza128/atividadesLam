@@ -37,7 +37,7 @@ public class PessoaAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return 0;
     }
-}
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Pessoa obj = lista.get(position);
@@ -52,9 +52,7 @@ public class PessoaAdapter extends BaseAdapter {
 
         ImageView imgImagem = v.findViewById(R.id.imgImagem);
         imgImagem.setImageResource(obj.getImagem());
-    }
 
-    @Override
-    public int getCount() {
-        return lista.size()
+        return v;
     }
+}
